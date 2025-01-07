@@ -78,7 +78,9 @@ Analyze a phishing email with a malicious .doc attachment and investigate a work
 
 ## Acknowledgements
 - Inspired from [TryHackMe - Boogeyman 2](https://tryhackme.com/r/room/boogeyman2)
-- [Wireshark](https://www.whois.com/whois/)
+- [Thunderbird](https://www.whois.com/whois/)
+- [Volatility](https://volatilityfoundation.org/)
+- [Olevba](https://github.com/decalage2/oletools)
 
 ## Disclaimer
 
