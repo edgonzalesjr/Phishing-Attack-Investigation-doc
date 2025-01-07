@@ -53,6 +53,19 @@ Analyze a phishing email with a malicious .doc attachment and investigate a work
 <br/>
 
 <p align="center">
+<img src="https://imgur.com/4tLQ6Kn.png" height="40%" width="40%" alt="Device Specification"/>
+<br/>
+<b>File Reputation. Indicating that Majority of vendors flag as malicious.</b>
+<br/>
+
+<p align="center">
+<img src="https://imgur.com/m5VN2w6.png" height="40%" width="40%" alt="Device Specification"/>
+<br/>
+<b>Parse .doc file for malicious macro. The tool detected a macro routine, named AutoOpen().
+  Where theres a GET request to a C2 server. Which the request retrieves update.png file.</b>
+<br/>
+
+<p align="center">
 <img src="https://imgur.com/" height="40%" width="40%" alt="Device Specification"/>
 <br/>
 <b>.</b>
