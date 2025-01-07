@@ -5,26 +5,26 @@ Analyze a phishing email with a malicious .doc attachment and investigate a work
 ### Skills Learned
 
 - Email Analysis
- - Extracting and analyzing email metadata and attachments to identify potential threats.
- - Using tools to detect malicious content embedded in .doc files.
+  - Extracting and analyzing email metadata and attachments to identify potential threats.
+  - Using tools to detect malicious content embedded in .doc files.
 - VBA Macro Analysis
- - Extracting and deobfuscating VBA macros from Microsoft Office documents.
- - Understanding macro behavior to identify malicious actions like C2 communication.
+  - Extracting and deobfuscating VBA macros from Microsoft Office documents.
+  - Understanding macro behavior to identify malicious actions like C2 communication.
 - Memory Forensics
- - Using memory analysis tools to investigate volatile data for evidence of malicious activity.
- - Identifying artifacts such as scheduled tasks, malicious payloads, and persistence mechanisms.
+  - Using memory analysis tools to investigate volatile data for evidence of malicious activity.
+  - Identifying artifacts such as scheduled tasks, malicious payloads, and persistence mechanisms.
 - Threat Actor Profiling and Impact Assessment
- - Correlating attack findings with threat actor TTPs.
- - Assessing the overall impact of the compromise on organizational security.
+  - Correlating attack findings with threat actor TTPs.
+  - Assessing the overall impact of the compromise on organizational security.
 
 ### Tools Used
 
 - Email Analysis Tools
- - Email client or text viewers for inspecting the phishing email.
+  - Email client or text viewers for inspecting the phishing email.
 - VBA Macro Analysis Tools
- - Olevba: Extract and analyze VBA macros from .doc files.
+  - Olevba: Extract and analyze VBA macros from .doc files.
 - Memory Forensics Tools
- - Volatility: Analyze memory dumps to identify malicious processes, artifacts, and persistence mechanisms.
+  - Volatility: Analyze memory dumps to identify malicious processes, artifacts, and persistence mechanisms.
 
 ## Perform Analysis
 
