@@ -80,27 +80,35 @@ Analyze a phishing email with a malicious .doc attachment and investigate a work
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/STRF7cz.png" height="40%" width="40%" alt="Device Specification"/>
 <br/>
-<b>.</b>
-<br/>
-
-<p align="center">
-<img src="https://imgur.com/" height="40%" width="40%" alt="Device Specification"/>
-<br/>
-<b>.</b>
+<b>The URL used to download the malicious binary executed by the stage 2 payload.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/lprYJn1.png" height="40%" width="40%" alt="Device Specification"/>
 <br/>
-<b>.</b>
+<b>The malicious process used to establish the C2 connection.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/gdRqAXz.png" height="40%" width="40%" alt="Device Specification"/>
 <br/>
-<b>.</b>
+<b>The IP address and port of the C2 connection initiated by the malicious binary.</b>
+<br/>
+
+<p align="center">
+<img src="https://imgur.com/yF5jhn6.png" height="40%" width="40%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/4ZWiXfY.png" height="40%" width="40%" alt="Device Specification"/>
+<br/>
+<b>IP reputation check for blacklist status.</b>
+<br/>
+
+<p align="center">
+<img src="https://imgur.com/6xckL1n.png" height="40%" width="40%" alt="Device Specification"/>
+<br/>
+<b>The attacker set up a scheduled task to maintain persistence, executing a potentially malicious PowerShell script every day at 9:00 AM.</b>
 <br/>
 
 ## Outcome
