@@ -29,25 +29,25 @@ Analyze a phishing email with a malicious .doc attachment and investigate a work
 ## Perform Analysis
 
 <p align="center">
-<img src="https://imgur.com/" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/MspvDbc.png" height="40%" width="40%" alt="Device Specification"/>
 <br/>
 <b>Get the hash value of the provided artefacts.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/26iCGrA.png" height="40%" width="40%" alt="Device Specification"/>
 <br/>
 <b>Open the extracted .eml file to see what the email's content.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/0eiGxDw.png" height="40%" width="40%" alt="Device Specification"/>
 <br/>
 <b>Open the extracted .eml file to text editor.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/ZH4aJw4.png" height="40%" width="40%" alt="Device Specification"/>
 <br/>
 <b>Extraction of the .eml for IOCs.</b>
 <br/>
@@ -77,7 +77,7 @@ Analyze a phishing email with a malicious .doc attachment and investigate a work
   - Recommendations for strengthening security measures and mitigating future attacks were provided.
 
 ## Acknowledgements
-- Inspired from [TryHackMe - Boogeyman 2](https://tryhackme.com/r/room/boogeyman2)
+- Adapted from [TryHackMe - Boogeyman 2](https://tryhackme.com/r/room/boogeyman2)
 - [Thunderbird](https://www.thunderbird.net/en-US/)
 - [Volatility](https://volatilityfoundation.org/)
 - [Olevba](https://github.com/decalage2/oletools)
