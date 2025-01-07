@@ -62,7 +62,33 @@ Analyze a phishing email with a malicious .doc attachment and investigate a work
 <img src="https://imgur.com/m5VN2w6.png" height="40%" width="40%" alt="Device Specification"/>
 <br/>
 <b>Parse .doc file for malicious macro. The tool detected a macro routine, named AutoOpen().
-  Where theres a GET request to a C2 server. Which the request retrieves update.png file.</b>
+  Where there's a GET request to a C2 server. Which the request retrieves update.png file.</b>
+<br/>
+
+<p align="center">
+<img src="https://imgur.com/S1mbWrO.png" height="40%" width="40%" alt="Device Specification"/>
+<br/>
+<b>What Windows version the dumped raw file. Which is a Windows 10 version 1903.</b>
+<br/>
+
+<p align="center">
+<img src="https://imgur.com/S9K9jvJ.png" height="40%" width="40%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/NkfZd3n.png" height="40%" width="40%" alt="Device Specification"/>
+<br/>
+<b>Check the process tree. The wscript.exe process which stands out and looks suspicious.</b>
+<br/>
+
+<p align="center">
+<img src="https://imgur.com/" height="40%" width="40%" alt="Device Specification"/>
+<br/>
+<b>.</b>
+<br/>
+
+<p align="center">
+<img src="https://imgur.com/" height="40%" width="40%" alt="Device Specification"/>
+<br/>
+<b>.</b>
 <br/>
 
 <p align="center">
