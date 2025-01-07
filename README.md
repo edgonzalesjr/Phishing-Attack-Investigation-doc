@@ -67,11 +67,11 @@ Analyze a phishing email with a malicious .doc attachment and investigate a work
 ## Outcome
 
 - Email Analysis
- - The phishing email with a .doc attachment was successfully analyzed, and malicious VBA macros were extracted.
+  - The phishing email with a .doc attachment was successfully analyzed, and malicious VBA macros were extracted.
 - VBA Macro Analysis
- - Malicious macros were deobfuscated, revealing C2 communication and the retrieval of an executable payload.
+  - Malicious macros were deobfuscated, revealing C2 communication and the retrieval of an executable payload.
 - Memory Forensics
- - The memory dump was analyzed to identify evidence of the executable payload and persistence mechanisms such as scheduled tasks.
+  - The memory dump was analyzed to identify evidence of the executable payload and persistence mechanisms such as scheduled tasks.
 - Threat Assessment
   - A comprehensive assessment of the attack's impact was delivered, linking the attack to the Boogeyman threat group.
   - Recommendations for strengthening security measures and mitigating future attacks were provided.
