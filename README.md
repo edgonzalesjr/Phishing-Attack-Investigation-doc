@@ -27,7 +27,7 @@ Analyze a phishing email with a malicious .doc attachment and investigate a work
 - Mozilla Thunderbird: Email client to open the .eml file.
 - Sublime Text: Text editor to open the .eml file.
 
-## Perform Analysis
+## Practical Exercises
 
 <p align="center">
 <img src="https://imgur.com/MspvDbc.png" height="90%" width="90%" alt="Device Specification"/>
