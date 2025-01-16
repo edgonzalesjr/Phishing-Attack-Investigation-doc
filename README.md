@@ -55,20 +55,20 @@ Analyze a phishing email with a malicious .doc attachment and investigate a work
 <p align="center">
 <img src="https://imgur.com/4tLQ6Kn.png" height="40%" width="40%" alt="Device Specification"/>
 <br/>
-<b>File Reputation. Indicating that Majority of vendors flag as malicious.</b>
+<b>ViruTotal: For file reputation. Indicating that Majority of vendors flag as malicious.</b>
 <br/>
 
 <p align="center">
 <img src="https://imgur.com/m5VN2w6.png" height="40%" width="40%" alt="Device Specification"/>
 <br/>
-<b>Parse .doc file for malicious macro. The tool detected a macro routine, named AutoOpen().
+<b>Olevba: Parse .doc file for malicious macro. The tool detected a macro routine, named AutoOpen().
   Where there's a GET request to a C2 server. Which the request retrieves update.png file.</b>
 <br/>
 
 <p align="center">
 <img src="https://imgur.com/S1mbWrO.png" height="40%" width="40%" alt="Device Specification"/>
 <br/>
-<b>What Windows version the dumped raw file. Which is a Windows 10 version 1903.</b>
+<b>Volatilitiy: What Windows version the dumped raw file. Which is a Windows 10 version 1903.</b>
 <br/>
 
 <p align="center">
