@@ -13,100 +13,101 @@ Analyze a phishing email with a malicious .doc attachment and investigate a work
 - Memory Forensics
   - Using memory analysis tools to investigate volatile data for evidence of malicious activity.
   - Identifying artifacts such as scheduled tasks, malicious payloads, and persistence mechanisms.
-- Threat Actor Profiling and Impact Assessment
+- Threat Actor Profiling
   - Correlating attack findings with threat actor TTPs.
   - Assessing the overall impact of the compromise on organizational security.
 
 ### Tools Used
 
-- Email Analysis Tools
-  - Email client or text viewers for inspecting the phishing email.
-- VBA Macro Analysis Tools
-  - Olevba: Extract and analyze VBA macros from .doc files.
-- Memory Forensics Tools
-  - Volatility: Analyze memory dumps to identify malicious processes, artifacts, and persistence mechanisms.
+- Olevba: Extract and analyze VBA macros from .doc files.
+- Volatility: Analyze memory dumps to identify malicious processes, artifacts, and persistence mechanisms.
+- VirusTotal: VirusTotal: Analyze file details, reputation scores, and community feedback.
+- AbuseIPDB: IP reputation reports and community feedback.
+- IPVoid: IP reputation scores and additional information.
+- Mozilla Thunderbird: Email client to open the .eml file.
+- Sublime Text: Text editor to open the .eml file.
 
 ## Perform Analysis
 
 <p align="center">
-<img src="https://imgur.com/MspvDbc.png" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/MspvDbc.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <b>Get the hash value of the provided artefacts.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/26iCGrA.png" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/26iCGrA.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <b>Open the extracted .eml file to see what the email's content.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/0eiGxDw.png" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/0eiGxDw.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <b>Open the extracted .eml file to text editor.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/ZH4aJw4.png" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/ZH4aJw4.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <b>Extraction of the .eml for IOCs.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/4tLQ6Kn.png" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/4tLQ6Kn.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <b>ViruTotal: For file reputation. Indicating that Majority of vendors flag as malicious.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/m5VN2w6.png" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/m5VN2w6.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <b>Olevba: Parse .doc file for malicious macro. The tool detected a macro routine, named AutoOpen().
   Where there's a GET request to a C2 server. Which the request retrieves update.png file.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/S1mbWrO.png" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/S1mbWrO.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <b>Volatilitiy: What Windows version the dumped raw file. Which is a Windows 10 version 1903.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/S9K9jvJ.png" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/S9K9jvJ.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<img src="https://imgur.com/NkfZd3n.png" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/NkfZd3n.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <b>Check the process tree. The wscript.exe process which stands out and looks suspicious.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/STRF7cz.png" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/STRF7cz.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <b>The URL used to download the malicious binary executed by the stage 2 payload.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/lprYJn1.png" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/lprYJn1.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <b>The malicious process used to establish the C2 connection.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/gdRqAXz.png" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/gdRqAXz.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <b>The IP address and port of the C2 connection initiated by the malicious binary.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/yF5jhn6.png" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/yF5jhn6.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<img src="https://imgur.com/4ZWiXfY.png" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/4ZWiXfY.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <b>IP reputation check for blacklist status.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/6xckL1n.png" height="40%" width="40%" alt="Device Specification"/>
+<img src="https://imgur.com/6xckL1n.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <b>The attacker set up a scheduled task to maintain persistence, executing a potentially malicious PowerShell script every day at 9:00 AM.</b>
 <br/>
@@ -124,11 +125,17 @@ Analyze a phishing email with a malicious .doc attachment and investigate a work
   - Recommendations for strengthening security measures and mitigating future attacks were provided.
 
 ## Acknowledgements
-- Adapted from [TryHackMe - Boogeyman 2](https://tryhackme.com/r/room/boogeyman2)
-- [Thunderbird](https://www.thunderbird.net/en-US/)
-- [Volatility](https://volatilityfoundation.org/)
-- [Olevba](https://github.com/decalage2/oletools)
+
+This project combines ideas and methods from various sources, such as the TryHackMe - Boogeyman 2 room and my IT experience. These resources provided the fundamental information and techniques, which were then modified in light of practical uses.
+ - [TryHackMe - Boogeyman 2](https://tryhackme.com/r/room/boogeyman2)
+ - [Olevba](https://github.com/decalage2/oletools)
+ - [Volatility](https://volatilityfoundation.org/)
+ - [VirusTotal](https://www.virustotal.com/gui/home/search)
+ - [AbuseIPDB](https://www.abuseipdb.com)
+ - [IPVoid](https://www.ipvoid.com)
+ - [Mozilla Thunderbird](https://www.thunderbird.net/en-US/)
+ - [Sublime Text](https://www.sublimetext.com/)
 
 ## Disclaimer
 
-The projects and activities within this portfolio are for educational and ethical cybersecurity research purposes only. All work was performed in controlled environments, including isolated, personally owned laboratories, subscription-based cloud environments, and through engagement with online cybersecurity learning platforms. Any cloud-based activities and participation in online learning platforms were conducted in full compliance with their respective terms of service and acceptable use policies. These projects should not be used for any illegal or unethical activities. Unauthorized access to any computer system or network is strictly prohibited. The author(s) are not responsible for any misuse of the information or code provided.
+The sole goals of the projects and activities here are for education and ethical cybersecurity research. All work was conducted in controlled environments, such as paid cloud spaces, private labs, and online cybersecurity education platforms. Online learning and cloud tasks adhered closely to all usage guidelines. Never use these projects for improper or unlawful purposes. It is always prohibited to break into any computer system or network. Any misuse of the provided information or code is not the responsibility of the author or authors.
